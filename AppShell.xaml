@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="FreshFarmApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FreshFarmApp.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.BackgroundColor="Azure"
+    Title="FreshFarmApp">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="TabIconStyle" TargetType="FontImageSource">
+                <Setter Property="FontFamily" Value="MaterialIcon" />
+                <Setter Property="Size" Value="24" />
+                <Setter Property="Color" Value="DarkSlateGray" />
+            </Style>
+        </ResourceDictionary>
+    </Shell.Resources>
+
+   <TabBar>
+ <Tab x:Name="HomeTab">
+    <Tab.Icon>
+        <FontImageSource
+            FontFamily="Materialicons"
+            Glyph="&#xe88a;"
+            Size="44"
+            Color="Black" />
+    </Tab.Icon>
+    <ShellContent ContentTemplate="{DataTemplate local:Homepage}" Route="home"/>
+</Tab>
+
+<Tab x:Name="SectionsTab">
+    <Tab.Icon>
+        <FontImageSource
+            FontFamily="Materialicons"
+            Glyph="&#xe145;"
+            Size="44"
+            Color="Black" />
+    </Tab.Icon>
+    <ShellContent ContentTemplate="{DataTemplate local:AddProductPage}" Route="add_products"/>
+</Tab>
+
+<Tab x:Name="BookmarksTab">
+    <Tab.Icon>
+        <FontImageSource
+            FontFamily="Materialicons"
+            Glyph="&#xe866;"
+            Size="44"
+            Color="Black" />
+    </Tab.Icon>
+    <ShellContent ContentTemplate="{DataTemplate local:BookmarksPage}" Route="bookmarks"/>
+</Tab>
+
+<Tab x:Name="ProfileTab">
+    <Tab.Icon>
+        <FontImageSource
+            FontFamily="Materialicons"
+            Glyph="&#xe7fd;"
+            Size="44"
+            Color="Black" />
+    </Tab.Icon>
+    <ShellContent ContentTemplate="{DataTemplate local:ProfilePage}" Route="profile"/>
+</Tab>
+</TabBar>
+</Shell>

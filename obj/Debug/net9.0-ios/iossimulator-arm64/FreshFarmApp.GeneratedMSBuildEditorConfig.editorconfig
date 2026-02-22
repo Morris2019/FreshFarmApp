@@ -1,0 +1,103 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net9.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FreshFarmApp
+build_property.ProjectDir = /Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreshFarmApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreshFarmApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreshFarmApp.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[/Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreshFarmApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreshFarmApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/Views/AddProductPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreshFarmApp.Views.AddProductPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/AddProductPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/AddProductPage.xaml
+
+[/Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/Views/BookmarksPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreshFarmApp.Views.BookmarksPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/BookmarksPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/BookmarksPage.xaml
+
+[/Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/Views/FarmInfo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreshFarmApp.Views.FarmInfo.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/FarmInfo.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/FarmInfo.xaml
+
+[/Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/Views/Homepage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreshFarmApp.Views.Homepage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Homepage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Homepage.xaml
+
+[/Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/Views/ProductDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreshFarmApp.Views.ProductDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ProductDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ProductDetailPage.xaml
+
+[/Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/Views/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreshFarmApp.Views.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ProfilePage.xaml
+
+[/Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/Views/SectionsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreshFarmApp.Views.SectionsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/SectionsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/SectionsPage.xaml
+
+[/Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/Views/Userlogin.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreshFarmApp.Views.Userlogin.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Userlogin.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Userlogin.xaml
+
+[/Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/Views/Userregister.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreshFarmApp.Views.Userregister.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Userregister.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Userregister.xaml

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:FreshFarmApp.ViewModels"
+    x:Class="FreshFarmApp.Views.AddProductPage"
+    x:DataType="viewmodels:AddProductViewModel"
+    Title="Add Product"
+    BackgroundColor="#F8F9FB">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="18">
+
+            <!-- Header -->
+            <VerticalStackLayout Spacing="6">
+                <Label
+                    Text="Add Farm Product"
+                    FontSize="26"
+                    FontAttributes="Bold"
+                    TextColor="#1F1F1F"/>
+
+                <Label
+                    Text="Enter product details below"
+                    FontSize="14"
+                    TextColor="#6E6E6E"/>
+            </VerticalStackLayout>
+
+            <!-- Card -->
+            <Frame
+                CornerRadius="20"
+                Padding="20"
+                HasShadow="True"
+                BackgroundColor="White">
+
+                <VerticalStackLayout Spacing="16">
+
+                    <Entry
+                        Placeholder="Product name"
+                        Text="{Binding Name}"
+                        TextColor="Black" />
+
+                    <!-- Category Picker -->
+                    <Picker
+                        Title="Select category"
+                        ItemsSource="{Binding Categories}"
+                        SelectedItem="{Binding Category}"
+                        TextColor="Black"
+                        BackgroundColor="#F2F2F2" />
+                        
+
+                    <Grid ColumnDefinitions="*,*"
+                          ColumnSpacing="12">
+
+                        <Entry
+                            Grid.Column="0"
+                            Placeholder="Price"
+                            Keyboard="Numeric"
+                            Text="{Binding Price}"
+                            TextColor="Black" />
+
+                        <Entry
+                            Grid.Column="1"
+                            Placeholder="Unit (kg, bag, piece)"
+                            Text="{Binding Unit}"
+                            TextColor="Black" />
+                    </Grid>
+
+                    <Entry
+                        Placeholder="Quantity available"
+                        Keyboard="Numeric"
+                        Text="{Binding QuantityAvailable}"
+                        TextColor="Black" />
+
+                    <Grid ColumnDefinitions="*,Auto"
+                          VerticalOptions="Center">
+                        <Label
+                            Text="Organic product?"
+                            VerticalOptions="Center"
+                            TextColor="Black" />
+
+                        <Switch
+                            Grid.Column="1"
+                            IsToggled="{Binding IsOrganic}" />
+                    </Grid>
+
+                    <Entry
+                        Placeholder="Farmer name"
+                        Text="{Binding FarmerName}"
+                        TextColor="Black" />
+
+                    <Entry
+                        Placeholder="Farm location"
+                        Text="{Binding Location}"
+                        TextColor="Black" />
+
+                    <Editor
+                        Placeholder="Description"
+                        AutoSize="TextChanges"
+                        HeightRequest="90"
+                        Text="{Binding Description}"
+                        TextColor="Black" />
+
+                    <!-- Image Upload -->
+                    <Frame
+                        Padding="12"
+                        CornerRadius="16"
+                        BackgroundColor="#F2F1FA">
+
+                        <VerticalStackLayout Spacing="10">
+
+                            <Image
+                                Source="{Binding ImagePath, FallbackValue=placeholder.png}"
+                                HeightRequest="180"
+                                Aspect="AspectFill" />
+
+                            <Button
+                                Text="Upload Product Image"
+                                Command="{Binding PickImageCommand}"
+                                BackgroundColor="#EDEBF6"
+                                TextColor="#4F3F9B"
+                                CornerRadius="12" />
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <Button
+                        Text="Save Product"
+                        HeightRequest="54"
+                        CornerRadius="16"
+                        BackgroundColor="#4F3F9B"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        Command="{Binding SaveCommand}" />
+
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

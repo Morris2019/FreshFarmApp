@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:FreshFarmApp.ViewModels"
+    x:Class="FreshFarmApp.Views.Userregister"
+    x:DataType="viewmodels:UserRegisterViewModel"
+    BackgroundColor="#FFFFFF"
+    Title="Register">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25">
+            <!-- Header -->
+            <Label Text="Welcome Back!" 
+                   FontSize="32" 
+                   FontAttributes="Bold" 
+                   TextColor="#4F3F9B"/>
+            <Label Text="Log in to continue" 
+                   FontSize="18" 
+                   TextColor="#A3A3A4"/>
+
+                    <!-- ===================== -->
+                    <!-- Full Name -->
+                    <!-- ===================== -->
+                    <Border BackgroundColor="#F2F1FA"
+                            StrokeShape="RoundRectangle 14"
+                            Padding="12">
+                            <Entry Grid.Column="1"
+                                   Placeholder="Full name"
+                                   Text="{Binding FullName}" />
+                      
+                    </Border>
+
+                    <!-- ===================== -->
+                    <!-- Email -->
+                    <!-- ===================== -->
+                    <Border BackgroundColor="#F2F1FA"
+                            StrokeShape="RoundRectangle 14"
+                            Padding="12">
+                            <Entry Grid.Column="1"
+                                   Placeholder="Email address"
+                                   Keyboard="Email"
+                                   Text="{Binding Email}" />
+                    </Border>
+
+                    <!-- ===================== -->
+                    <!-- Password -->
+                    <!-- ===================== -->
+                    <Border BackgroundColor="#F2F1FA"
+                            StrokeShape="RoundRectangle 14"
+                            Padding="12">
+                            <Entry Grid.Column="1"
+                                   Placeholder="Password"
+                                   IsPassword="True"
+                                   Text="{Binding Password}" />
+     
+                    </Border>
+
+                    <!-- ===================== -->
+                    <!-- Register Button -->
+                    <!-- ===================== -->
+                    <Button Text="Create Account"
+                            Command="{Binding RegisterCommand}"
+                            HeightRequest="56"
+                            CornerRadius="16"
+                            BackgroundColor="#4F3F9B"
+                            TextColor="White"
+                            FontAttributes="Bold" />
+
+                    <!-- ===================== -->
+                    <!-- Login Redirect -->
+                    <!-- ===================== -->
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="6">
+                        <Label Text="Already have an account?"
+                               TextColor="#6E6E6E" />
+                        <Label Text="Login"
+                               TextColor="#4F3F9B"
+                               FontAttributes="Bold">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding NavigateToLoginCommand}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </HorizontalStackLayout>
+
+                </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
