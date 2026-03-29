@@ -14,7 +14,7 @@ public static class MauiBuilderExtensions
 
     public static MauiAppBuilder RegisterViewModels(this MauiAppBuilder builder)
     {
-        builder.Services.AddTransient<HomeViewModel>();
+        
         builder.Services.AddTransient<SectionsViewModel>();
         builder.Services.AddTransient<FarmViewModel>();
          builder.Services.AddTransient<UserLoginViewModel>();

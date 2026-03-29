@@ -13,22 +13,9 @@ namespace FreshFarmApp.Data
         public AppDatabase(string dbPath)
         {
             _database = new SQLiteAsyncConnection(dbPath);
-            _database.CreateTableAsync<Article>().Wait();
             _database.CreateTableAsync<User>().Wait();
             _database.CreateTableAsync<FarmProduct>().Wait();}
-
-        // Articles
-        public Task<List<Article>> GetArticlesAsync()
-            => _database.Table<Article>().ToListAsync();
-
-        public Task<Article> GetArticleAsync(int id)
-            => _database.Table<Article>().Where(a => a.Id == id).FirstOrDefaultAsync();
-
-        public Task<int> SaveArticleAsync(Article article)
-            => _database.InsertOrReplaceAsync(article);
-
-        public Task<int> DeleteArticleAsync(Article article)
-            => _database.DeleteAsync(article);
+        
 
         // Users
         public Task<User> GetUserAsync(Guid userId)
@@ -42,9 +29,9 @@ namespace FreshFarmApp.Data
                             .Where(u => u.Email == email)
                             .FirstOrDefaultAsync();
         }
-
-
-
+           //var query = "SELECT * FROM Users WHERE Email = '" + email + "'";
+        //var user = database.Query<User>(query).FirstOrDefault();
+        
        public Task<int> SaveUserAsync(User user)
          => _database.InsertOrReplaceAsync(user);
 
@@ -80,7 +67,19 @@ namespace FreshFarmApp.Data
                             .Where(p => p.IsAvailable)
                             .ToListAsync();
         }
+        /*
+        public async Task<List<Product>> GetAllProductsAsync()
+        {
+            if (UserSession.CurrentUser == null)
+            {
+                throw new UnauthorizedAccessException("User must be authenticated.");
+            }
 
+             return _database.Table<FarmProduct>()
+                            .Where(p => p.IsAvailable)
+                            .ToListAsync();
+        }
+        */
         // GET BY ID
         public Task<FarmProduct?> GetProductByIdAsync(int id)
         {

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FreshFarmApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+6dddbf439fc83c53198feba1bbcc9a207a4a6ef6")]
 [assembly: System.Reflection.AssemblyProductAttribute("FreshFarmApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FreshFarmApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

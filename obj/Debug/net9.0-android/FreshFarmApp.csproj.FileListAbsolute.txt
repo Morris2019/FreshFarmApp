@@ -1995,3 +1995,4 @@
 /Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/obj/Debug/net9.0-android/stamp/_ResolveLibraryProjectImports.stamp
 /Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/obj/Debug/net9.0-android/resizetizer/f/MaterialIcons-Regular.ttf
 /Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/obj/Debug/net9.0-android/assets/MaterialIcons-Regular.ttf
+/Users/emmanuelmorrison/Documents/IU MASTERS/Project-Secure Software Implementation/FreshFarmApp/obj/Debug/net9.0-android/FreshFarmApp.sourcelink.json
